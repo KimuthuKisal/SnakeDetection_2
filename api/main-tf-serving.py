@@ -13,7 +13,18 @@ endpoint = "localhost:8501/predict" #fix this
 
 MODEL = tf.keras.models.load_model("../models/fourth_version")
 
-snake_labels = ['Cobra', 'Sri Lankan Krait', 'Whip snakes' ]
+snake_labels = [
+    'Rat snake', 
+    'Cobra', 
+    'Indian Python', 
+    'Sand Boa', 
+    'Hump Nosed Viper', 
+    'Whip Snake', 
+    'Sri Lankan Krait', 
+    'Common Krait', 
+    'Russell’s Viper', 
+    'Saw-scaled Viper'
+]
 
 
 @app.get("/ping")
